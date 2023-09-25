@@ -63,7 +63,9 @@ public class Personagem {
         outro.receberDano(arma.getDano());
     }
 
-    public void recuperarVida() {
-
+    public void recuperarVida(Pocao pocao) {
+        this.setVida(this.getVida() + pocao.getCura());
+        System.out.printf("%s tomou %s e recuperou %d pontos de vida.%n",
+                this.getNome(), pocao.getNome(), pocao.getCura());
     }
 }
