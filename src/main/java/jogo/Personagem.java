@@ -5,6 +5,7 @@ public class Personagem {
     private int vida;
     private int mana;
     private Arma arma;
+    private Pocao pocao;
 
     public Personagem(String nome) {
         this.nome = nome;
