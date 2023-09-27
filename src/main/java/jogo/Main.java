@@ -2,18 +2,19 @@ package jogo;
 
 public class Main {
     public static void main(String[] args) {
-        Personagem raimundo = new Personagem("Raimundo Nonato");
-        Personagem madruga = new Personagem("Seu Madruga");
-        Arma peixeira = new Arma("Peixeira", 20);
-        Arma chinela = new Arma("Chinela havaiana", 5);
-        Pocao corote = new Pocao("Corote", 5);
+        Personagem lula = new Personagem("Lula");
+        Personagem bolsonaro = new Personagem("Bolsonaro");
+        Arma metralhadora = new Arma("Metralhadora", 15);
+        Arma vacina = new Arma("Vacina da covid", 20);
+        Pocao zeGotinha = new Pocao("Vacina de gotinha", 15);
 
-        raimundo.setArma(peixeira);
-        madruga.setArma(chinela);
+        lula.setArma(vacina);
+        bolsonaro.setArma(metralhadora);
 
-        raimundo.atacar(madruga);
-        madruga.recuperarVida(corote);
-        madruga.atacar(raimundo);
+        bolsonaro.atacar(lula);
+        lula.atacar(bolsonaro);
+        lula.recuperarVida(zeGotinha);
+        
 
 //        Scanner teclado = new Scanner(System.in);
 //        boolean executando = true;
