@@ -66,7 +66,7 @@ public class Personagem {
 
     public void recuperarVida(Pocao pocao) {
         this.setVida(this.getVida() + pocao.getCura());
-        System.out.printf("%s tomou %s e recuperou %d pontos de vida.%n",
+        System.out.printf("%s tomou uma %s e recuperou %d pontos de vida.%n",
                 this.getNome(), pocao.getNome(), pocao.getCura());
     }
 }

@@ -21,8 +21,5 @@ public class Pocao {
         return cura;
     }
 
-    public void setCura(int vida) {
-        this.cura += vida;
-    }
-
+    
 }
